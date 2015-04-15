@@ -28,10 +28,10 @@ if [[ "${terminfo[knp]}" != "" ]]; then
 fi
 
 if [[ "${terminfo[kcuu1]}" != "" ]]; then
-  bindkey "${terminfo[kcuu1]}" up-line-or-search      # start typing + [Up-Arrow] - fuzzy find history forward
+  bindkey "${terminfo[kcuu1]}" history-beginning-search-backward      # start typing + [Up-Arrow] - fuzzy find history forward
 fi
 if [[ "${terminfo[kcud1]}" != "" ]]; then
-  bindkey "${terminfo[kcud1]}" down-line-or-search    # start typing + [Down-Arrow] - fuzzy find history backward
+  bindkey "${terminfo[kcud1]}" history-beginning-search-forward    # start typing + [Down-Arrow] - fuzzy find history backward
 fi
 
 if [[ "${terminfo[khome]}" != "" ]]; then
@@ -71,8 +71,8 @@ bindkey "^[m" copy-prev-shell-word
 
 #bindkey -e  ## emacs key bindings
 #
-bindkey '^[[A' up-line-or-search
-bindkey '^[[B' down-line-or-search
+#bindkey '^[[A' history-beginning-search-backward
+#bindkey '^[[B' history-beginning-search-forward
 #bindkey '^[^[[C' emacs-forward-word
 #bindkey '^[^[[D' emacs-backward-word
 #
