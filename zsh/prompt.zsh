@@ -34,7 +34,7 @@ git_prompt_info () {
 }
 
 unpushed () {
-  $git cherry -v @{upstream} 2>/dev/null
+  $git cherry -v @{upstream} 2>&1
 }
 
 need_push () {
