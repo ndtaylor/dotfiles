@@ -9,12 +9,17 @@
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]
+		log = log --date=local
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 		append = commit --amend --no-edit
+[log]
+		date = local
+[blame]
+		date = local
 [color]
         diff = auto
         status = auto
