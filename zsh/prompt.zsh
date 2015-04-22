@@ -20,9 +20,9 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on %{$fg[green]%}$(git_prompt_info)%{$reset_color%}"
     else
-      echo "on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on %{$fg[red]%}$(git_prompt_info)%{$reset_color%}"
     fi
   fi
 }
@@ -42,7 +42,7 @@ need_push () {
   then
     echo " "
   else
-    echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
+    echo " with %{$fg[magenta]%}unpushed%{$reset_color%} "
   fi
 }
 
@@ -68,10 +68,10 @@ rb_prompt() {
 }
 
 directory_name() {
-  echo "%{$fg_bold[cyan]%}%0~%{$reset_color%}"
+  echo "%{$fg[cyan]%}%0~%{$reset_color%}"
 }
 
-export PROMPT=$'\n'"%{$fg_bold[magenta]%}┌─%{$reset_color%} [%{$fg_bold[green]%} %D{%Y-%m-%d} %* %{$reset_color%}]:"$' $(directory_name) $(git_dirty)$(need_push)\n'"%{$fg_bold[magenta]%}└─ ➜ %{$reset_color%} "
+export PROMPT=$'\n'"%{$fg[magenta]%}┌─%{$reset_color%} [%{$fg[green]%} %D{%Y-%m-%d} %* %{$reset_color%}]:"$' $(directory_name) $(git_dirty)$(need_push)\n'"%{$fg[magenta]%}└─ ➜ %{$reset_color%} "
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
