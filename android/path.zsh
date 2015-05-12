@@ -2,7 +2,7 @@
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
 
-sdk_path_file=$ZSH/android/path.local
+sdk_path_file=$ZSH/android/android.local
 if [[ -a $sdk_path_file ]]
 then
   source $sdk_path_file
