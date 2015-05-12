@@ -10,6 +10,6 @@ fi
 
 if [[ -n "$ANDROID_SDK" ]]
 then 
-  export PATH="$ANDROID_SDK/platform-tools:$PATH"
+  export PATH="$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$PATH"
 fi
 
