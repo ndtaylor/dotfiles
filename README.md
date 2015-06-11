@@ -24,6 +24,11 @@ cd ~/.dotfiles
 script/bootstrap
 ```
 
+If you were previously using bash, run this and then restart your terminal to 
+switch over to zsh.
+
+    chsh -s $(which zsh)
+
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
 
