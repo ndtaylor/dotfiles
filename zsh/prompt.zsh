@@ -38,7 +38,7 @@ unpushed () {
 }
 
 need_push () {
-  if [[ $(unpushed) == "" ]]
+  if $(! $git staus -s &> /dev/null) || [[ $(unpushed) == "" ]]
   then
     echo " "
   else
