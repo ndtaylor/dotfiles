@@ -23,3 +23,7 @@ alias gs='git status'
 alias ga='git add --all'
 alias gsr='git svn rebase'
 alias grp='git remote prune origin'
+alias gcl='git-cleanup'
+
+function git-merged() { git branch --merged $@ | sed -e '/^*/d' }
+function git-cleanup() { git branch -d $(git-merged); git remote prune origin }
