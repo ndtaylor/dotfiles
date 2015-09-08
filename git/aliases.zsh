@@ -26,4 +26,19 @@ alias grp='git remote prune origin'
 alias gcl='git-cleanup'
 
 function git-merged() { git branch --merged $@ | sed -e '/^*/d' }
-function git-cleanup() { git branch -d $(git-merged); git remote prune origin }
+function git-cleanup() { 
+	echo "=== Cleaning Remote Branch Caches ==="
+	git remote prune origin
+
+	echo "=== Cleaning Local Branches ========="
+	except_branches=('"\*"' 'master' 'develop' 'rc')
+	command="git branch --merged"
+	for branch in $except_branches; do
+		command="$command | grep -v $branch"
+	done
+	command="$command | xargs -n 1 git branch -d"
+	eval $command
+
+	echo "=== Remaining Branches =============="
+	git branch
+}
