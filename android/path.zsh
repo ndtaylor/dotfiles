@@ -11,5 +11,6 @@ fi
 if [[ -n "$ANDROID_SDK" ]]
 then 
   export PATH="$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$PATH"
+  export ANDROID_HOME=$ANDROID_SDK
 fi
 
