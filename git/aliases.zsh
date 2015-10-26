@@ -13,7 +13,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 
 # Pushing
 alias gp='git push'
-alias gpsu="git push --set-upstream origin $(git_branch)"
+function gpsu() { git push --set-upstream origin "$(git_branch)" }
 
 # Pulling
 alias gpl='git pull'
