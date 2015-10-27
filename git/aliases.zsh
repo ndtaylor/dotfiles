@@ -14,6 +14,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 # Pushing
 alias gp='git push'
 function gpsu() { git push --set-upstream origin "$(git_branch)" }
+alias gpr='git pull-request'
 
 # Pulling
 alias gpl='git pull'
@@ -37,7 +38,6 @@ alias gcb='git copy-branch-name'
 alias gb='git branch'
 
 # Clean up
-alias grp='git remote prune origin'
 alias gcl='git-cleanup'
 
 function git_branch() {
