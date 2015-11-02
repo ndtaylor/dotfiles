@@ -27,7 +27,7 @@ alias gs='git status'
 # Committing
 alias gc='git commit'
 alias gca='git commit -a'
-alias gaap='git commit -a --ammend --no-edit'
+alias gaap='git commit -a --amend --no-edit'
 alias gcam='git commit -am'
 alias gcm='git commit -m'
 alias ga='git add --all'
