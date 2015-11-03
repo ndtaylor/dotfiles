@@ -19,6 +19,7 @@ alias gpr='git pull-request'
 # Pulling
 alias gpl='git pull'
 alias gsr='git svn rebase'
+alias gf='git fetch'
 
 # Status
 alias gd='git diff'
