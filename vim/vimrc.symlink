@@ -6,3 +6,6 @@ filetype indent plugin on
 set number
 set tabstop=4
 set shiftwidth=4
+
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+autocmd Filetype markdown setlocal wrap linebreak nolist
