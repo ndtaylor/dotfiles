@@ -23,6 +23,7 @@ alias gf='git fetch'
 
 # Status
 alias gd='git diff'
+alias gdw='git diff --color-words'
 alias gs='git status'
 
 # Committing
