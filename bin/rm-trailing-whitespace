@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import os
+from argparse import ArgumentParser
+
+
+def all_files(files):
+    results = []
+    for f in files:
+        if os.path.isfile(f):
+            results.append(f)
+        else:
+            subfiles = [os.path.join(f, x) for x in os.listdir(f)]
+            results.extend(all_files(subfiles))
+    return results
+
+
+parser = ArgumentParser()
+parser.add_argument("files", type=str, nargs='+')
+
+args = parser.parse_args()
+for f in all_files(args.files):
+    with open(f) as source:
+        processed_lines = [line.rstrip() for line in source]
+    with open(f, 'w') as target:
+        target.writelines([("%s\n" % line) for line in processed_lines])
