@@ -1,12 +1,11 @@
 "*":
   editor:
     showIndentGuide: true
-    fontFamily: "Menlo"
-    fontSize: 11
     invisibles: {}
     tabLength: 4
     softWrapAtPreferredLineLength: true
     preferredLineLength: 120
+    fontSize: 16
   core:
     ignoredNames: [
       ".bundle"
@@ -43,6 +42,9 @@
       "autocomplete-css"
       "language-toml"
     ]
+    packagesWithKeymapsDisabled: [
+      "vim-mode"
+    ]
   "spell-check":
     grammars: [
       "text.plain"
@@ -55,6 +57,17 @@
   "find-and-replace": {}
   welcome:
     showOnStartup: false
+  "autocomplete-plus":
+    fileBlacklist: [
+      "*.md"
+    ]
+  "fuzzy-finder": {}
+".gfm.source":
+  editor:
+    preferredLineLength: 120
 ".source.toml":
+  editor:
+    preferredLineLength: 120
+".plain.text":
   editor:
     preferredLineLength: 120
