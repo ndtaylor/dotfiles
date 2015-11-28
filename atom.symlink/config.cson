@@ -1,35 +1,60 @@
-'global':
-  'editor':
-    'showIndentGuide': true
-    'fontFamily': 'Menlo'
-    'fontSize': 15
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
-      'vendor'
+"*":
+  editor:
+    showIndentGuide: true
+    fontFamily: "Menlo"
+    fontSize: 11
+    invisibles: {}
+    tabLength: 4
+    softWrapAtPreferredLineLength: true
+    preferredLineLength: 120
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
     ]
-    'themes': [
-      'unity-ui'
-      'glacier-syntax'
+    themes: [
+      "unity-ui"
+      "glacier-syntax"
     ]
-    'hideGitIgnoredFiles': true
-    'disabledPackages': [
-      'background-tips'
-      'exception-reporting'
-      'metrics'
+    hideGitIgnoredFiles: true
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "language-go"
+      "language-css"
+      "language-csharp"
+      "language-coffee-script"
+      "language-clojure"
+      "language-c"
+      "language-javascript"
+      "language-less"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-sass"
+      "language-sql"
+      "autocomplete-css"
+      "language-toml"
     ]
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
     ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.89.0'
+  "vim-mode": {}
+  autosave:
+    enabled: true
+  "find-and-replace": {}
+  welcome:
+    showOnStartup: false
+".source.toml":
+  editor:
+    preferredLineLength: 120
