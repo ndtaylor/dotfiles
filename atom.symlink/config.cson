@@ -1,25 +1,11 @@
 "*":
-  editor:
-    showIndentGuide: true
-    invisibles: {}
-    tabLength: 4
-    softWrapAtPreferredLineLength: true
-    preferredLineLength: 120
-    fontSize: 16
+  "autocomplete-plus":
+    fileBlacklist: [
+      "*.md"
+    ]
+  autosave:
+    enabled: true
   core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
-    themes: [
-      "unity-ui"
-      "glacier-syntax"
-    ]
-    hideGitIgnoredFiles: true
     disabledPackages: [
       "background-tips"
       "exception-reporting"
@@ -27,7 +13,6 @@
       "language-go"
       "language-css"
       "language-csharp"
-      "language-coffee-script"
       "language-clojure"
       "language-c"
       "language-javascript"
@@ -42,9 +27,30 @@
       "autocomplete-css"
       "language-toml"
     ]
+    hideGitIgnoredFiles: true
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+    ]
     packagesWithKeymapsDisabled: [
       "vim-mode"
     ]
+    themes: [
+      "unity-ui"
+      "glacier-syntax"
+    ]
+  editor:
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  "find-and-replace": {}
+  "fuzzy-finder": {}
   "spell-check":
     grammars: [
       "text.plain"
@@ -52,22 +58,14 @@
       "text.git-commit"
     ]
   "vim-mode": {}
-  autosave:
-    enabled: true
-  "find-and-replace": {}
   welcome:
     showOnStartup: false
-  "autocomplete-plus":
-    fileBlacklist: [
-      "*.md"
-    ]
-  "fuzzy-finder": {}
 ".gfm.source":
   editor:
     preferredLineLength: 120
-".source.toml":
+".plain.text":
   editor:
     preferredLineLength: 120
-".plain.text":
+".source.toml":
   editor:
     preferredLineLength: 120
