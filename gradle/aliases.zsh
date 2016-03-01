@@ -1,3 +1,3 @@
-alias gw='gwo --offline'
-alias gwd='gwo --offline --no-daemon'
-alias gwod='gwo --no-daemon'
+alias gwo='gw --offline'
+alias gwd='gwo --no-daemon'
+alias gwod='gwo --offline --no-daemon'

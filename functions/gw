@@ -10,6 +10,6 @@ function upfind() {
 	done
 }
 
-function gwo() {
+function gw() {
 	$(upfind gradlew) "$@"
 }
