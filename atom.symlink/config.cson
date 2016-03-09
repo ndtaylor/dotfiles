@@ -14,7 +14,6 @@
       "language-css"
       "language-csharp"
       "language-clojure"
-      "language-c"
       "language-javascript"
       "language-less"
       "language-make"
@@ -60,12 +59,13 @@
   "vim-mode": {}
   welcome:
     showOnStartup: false
-".gfm.source":
+  "local-history": {}
+".source.toml":
   editor:
     preferredLineLength: 120
 ".plain.text":
   editor:
     preferredLineLength: 120
-".source.toml":
+".gfm.source":
   editor:
     preferredLineLength: 120
