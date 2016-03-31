@@ -45,11 +45,13 @@
   editor:
     invisibles: {}
     preferredLineLength: 120
+    scrollPastEnd: true
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
     tabLength: 4
   "find-and-replace": {}
   "fuzzy-finder": {}
+  "local-history": {}
   "spell-check":
     grammars: [
       "text.plain"
@@ -59,13 +61,12 @@
   "vim-mode": {}
   welcome:
     showOnStartup: false
-  "local-history": {}
-".source.toml":
+".gfm.source":
   editor:
     preferredLineLength: 120
 ".plain.text":
   editor:
     preferredLineLength: 120
-".gfm.source":
+".source.toml":
   editor:
     preferredLineLength: 120
