@@ -9,8 +9,14 @@ then
 fi
 
 if [[ -n "$ANDROID_SDK" ]]
-then 
-  export PATH="$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$PATH"
+then
+  if [ "$(ls -A /usr/local/Cellar/android-sdk)" ]
+  then
+	echo "Android sdk installed from Homebrew; not adding to path."
+  else
+	echo "Android sdk was not installed from Homebrew; adding sdk to path..."
+  	export PATH="$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$PATH"
+  fi
   export ANDROID_HOME=$ANDROID_SDK
 fi
 
