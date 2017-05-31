@@ -37,6 +37,7 @@
     packagesWithKeymapsDisabled: [
       "vim-mode"
     ]
+    telemetryConsent: "no"
     themes: [
       "unity-ui"
       "glacier-syntax"
