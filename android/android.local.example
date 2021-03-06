@@ -1,3 +1,0 @@
-# Change the value below to the path to your Android SDK directory
-# then rename this file to "android.local"
-export ANDROID_SDK="$HOME/Library/Android/sdk"
